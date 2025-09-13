@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <script src="https://kit.fontawesome.com/87a703f167.js" crossorigin="anonymous"></script>    
+  <title>Weather App</title>
 </head>
 <body>
-  
+  <div class="header">
+    <div class="title">Weather App</div>
+    <form class="searchBarContainer">
+      <input id="searchBar" type="text" placeholder="Insert the name of a city" required>
+      <button type="submit"><i class="material-icons">search</i></button>
+    </form>
+    <button class="temperatureMeasureBtn">ºF</button>
+  </div>
+  <div class="contents"></div>
 </body>
 </html>

@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: 1fr 5fr/ 1fr;
+}
+
+.header{
+  grid-area: 1/1/2/2;
+  background: linear-gradient(#82C8E5,#FFCC33);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title{
+  font-size: 25px;
+  font-weight: 800;
+}
+
+button{
+  background-color: transparent;
+  border: 0px;
+}
+
+.contents{
+  position: relative;
+  grid-area: 2/1/3/2;
+  background-color: aqua;
+  background: linear-gradient(#FFCC33,#82C8E5);
+}
+
+.searchBarContainer{
+  display: flex;
+  gap: 1rem;
+}
+
+.mainCard{
+  margin-left: 10%;
+  margin-top: 5vh;
+  background-color: white;
+  border: 1px solid black;
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+.conditionContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.statsContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subCard{
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: white;
+  width: 20vw;
+  height: 10vw;
+  padding: 20px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  /* width: 10%;
+  height: 7%; */
+}
+
+.temperaturesContainer{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.subCard:nth-child(2){
+  position: absolute;
+  left: 4vw;
+}
+
+.subCard:nth-child(3){
+  position: absolute;
+  left: 28vw;
+}
+
+.subCard:nth-child(4){
+  position: absolute;
+  right: 28vw;
+}
+
+.subCard:nth-child(5){
+  position: absolute;
+  right: 4vw;
+}
+
+.rain-image {
+  background: url('rain.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.rain-image a{
+  color: white;
+}
+
+.sunny-image {
+  background: url('sunny.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.sunny-image a{
+  color: black;
+}
+
+.cloud-image{
+  background: url('cloud.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.cloud-image a{
+  color: black;
+}
+
+.temperatureMeasureBtn{
+  background-color: red;
+  width: 5vw;
+  height: 4vh;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.loader{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}

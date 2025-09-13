@@ -1,0 +1,1 @@
+A toggle button for the celsius an fahrenheit would be more intuitive and look better
